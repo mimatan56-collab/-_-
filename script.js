@@ -1,9 +1,0 @@
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const buttons = document.querySelectorAll("button");
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.classList.add("clicked");
-    setTimeout(() => button.classList.remove("clicked"), 180);
-  });
-});
